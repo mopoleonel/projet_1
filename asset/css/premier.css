@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #969090f6;
+}
+
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    max-zoom: cover;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns:  1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "first second";
+    
+}
+#header-top{
+    grid-area: header-top;
+    display: none;
+ 
+}
+#first{
+    grid-area: first;
+    background-color: #969090f6;
+   
+}
+.second{
+    background-image: url("/asset/images/font.png");
+    background-size: cover;
+    background-position: center;
+    grid-area: second;
+}
+@media (max-width: 900px) {
+    .container{
+        height: 100vh;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 3fr;
+        grid-template-areas: "header-top" "second";
+       
+    }
+    #header-top{
+        display: block;
+
+    }
+
+     i{
+        margin-left: 96%;
+        display: block;
+        color: black;
+        font-size: 25px;
+      }
+    
+    #first{
+        display: none;
+
+    }
+    .second{
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
