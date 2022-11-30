@@ -16,7 +16,7 @@ img{
 .container{
     height: 100vh;
     display: grid;
-    text-align: center;
+
     grid-template-columns:  1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas: "first second";
@@ -30,19 +30,48 @@ img{
 #first{
     grid-area: first;
     background-color: #969090f6;
-   
+    text-align: center;
+}
+img ~p{
+    margin-top: -15px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+
+}
+i{
+    color: black;
+    margin-top: 15px;
+    font-size: 20px;
 }
 .second{
     background-image: url("/asset/images/font.png");
     background-size: cover;
     background-position: center;
+    color: rgba(3, 25, 223, 0.979);
     grid-area: second;
 }
+h1{
+    margin-top: 180px;
+    text-align: center;
+}
+.s{
+    margin-left: 43%;
+}
+h1 ~p{
+    margin-top: -15px;
+    margin-left: 350px;
+    font-size: 20px;
+}
+
+
+
 @media (max-width: 900px) {
     .container{
         height: 100vh;
         display: grid;
-        text-align: center;
         grid-template-columns: 1fr;
         grid-template-rows: 50px 3fr;
         grid-template-areas: "header-top" "second";
@@ -67,6 +96,11 @@ img{
     .second{
         width: 100%;
         height: 100%;
+    }
+    h1 ~p{
+        margin-top: -15px;
+        margin-left: 150px;
+        font-size: 20px;
     }
 
 
