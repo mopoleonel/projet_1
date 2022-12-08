@@ -1,7 +1,11 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #969090f6;
+    font-family: arial;
+
+}
+h2{
+    display: none;
 }
 
 
@@ -30,26 +34,29 @@ img{
 }
 #first{
     grid-area: first;
-    background-color: #969090f6;
     text-align: center;
 }
 .developpeur{
     margin-top: 3px;
-    color: rgb(116, 84, 84);
-    background-color: #969090f6;
+    color: rgb(168, 161, 161);
+    background-color: white;
+}
+img ~h1{
+    font-size: 10px;
 }
 img ~p{
     display: block;
     width: 250px;
-    background-color: #a19c9c;
     margin-top: -15px;
     padding-top: 10px;
+    background-color: rgba(243, 232, 232, 0.993);
     font-size: 20px;
    
 }
 a{
 
     text-decoration: none;
+    color: black;
   
 
 }
@@ -60,30 +67,41 @@ i{
     font-size: 20px;
 }
 .second{
-    background-image: url("/asset/images/font.png");
+    background-image: url("/asset/images/landscape.jpg");
     background-size: cover;
     background-position: center;
-    color: rgba(3, 25, 223, 0.979);
+    color: white;
     grid-area: second;
 }
 h1{
+    font-size: 50px;
     margin-top: 180px;
     text-align: center;
+
 }
 .s{
     margin-left: 43%;
-    color: rgb(116, 84, 84);
+    color: rgb(168, 161, 161);
 }
+u{
+    text-decoration: underline yellow;
+}
+
 h1 ~p{
     margin-top: -15px;
     margin-left: 350px;
     font-size: 20px;
+    color: white;
 }
 
 
 
 @media (max-width: 900px) {
+    h2{
+        display: block;
+    }
     .container{
+        margin-top: -60px;
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr;
