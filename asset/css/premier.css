@@ -35,34 +35,43 @@ img{
 #first{
     grid-area: first;
     text-align: center;
+    box-shadow: inset -8px 0px  rgb(226, 218, 218);
 }
 .developpeur{
     margin-top: 3px;
     color: rgb(168, 161, 161);
     background-color: white;
+    border-color: white;
 }
 img ~h1{
     font-size: 10px;
 }
 img ~p{
     display: block;
-    width: 250px;
-    margin-top: -15px;
+    height: 30px;
+    width: 218px;
     padding-top: 10px;
-    background-color: rgba(243, 232, 232, 0.993);
+    margin-top: -20px;
+   background-color:  rgb(255, 255, 255);
     font-size: 20px;
-   
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 229, 229);
+}
+img ~p:hover{
+    background-color: rgb(246, 250, 250);
 }
 a{
-
     text-decoration: none;
     color: black;
-  
-
 }
+
 i{
     display: none;
-    color: black;
+    width: 30px;
+    height: 20px;
+    background-color: rgb(221, 213, 213);
+    color: rgb(119, 115, 115);
     margin-top: 15px;
     font-size: 20px;
 }
